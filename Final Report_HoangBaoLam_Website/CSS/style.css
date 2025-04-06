@@ -1,0 +1,272 @@
+/* CSS/SStyle.css */
+
+/* Reset default styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    color: #333;
+    background-color: #f4f4f8; /* Màu nền nhẹ nhàng hơn */
+    line-height: 1.6; /* Tăng khoảng cách dòng */
+}
+
+/* Container */
+.container {
+    max-width: 1100px; /* Tăng max-width */
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+/* Header */
+header {
+    background-color: #6c63ff; /* Màu tím nhạt, hiện đại hơn */
+    color: #fff;
+    padding: 30px 0; /* Tăng padding */
+}
+
+header .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header .logo h1 {
+    font-family: 'Dancing Script', cursive;
+    font-size: 2.5em; /* Tăng kích thước tiêu đề */
+}
+
+header .user-cart {
+    display: flex;
+    gap: 25px; /* Tăng khoảng cách giữa các mục */
+}
+
+header .user-cart a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 1.1em; /* Tăng kích thước chữ */
+    transition: color 0.3s; /* Hiệu ứng chuyển tiếp màu */
+}
+
+header .user-cart a:hover {
+    color: #e0e0e0; /* Màu khi hover */
+}
+
+.nav-search-container {
+    background-color: #5a52e6; /* Màu tím đậm hơn */
+    padding: 15px 0; /* Tăng padding */
+}
+
+nav .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 1.1em; /* Tăng kích thước chữ */
+    margin-right: 25px; /* Tăng margin */
+    transition: color 0.3s; /* Hiệu ứng chuyển tiếp màu */
+}
+
+nav a:hover {
+    color: #e0e0e0; /* Màu khi hover */
+}
+
+.search-bar {
+    margin-top: 15px; /* Tăng margin */
+    text-align: right;
+}
+
+.search-bar form {
+    display: inline-block;
+}
+
+.search-bar input {
+    padding: 10px 15px; /* Tăng padding */
+    font-size: 1em;
+    border: 1px solid #ced4da; /* Màu viền nhẹ nhàng hơn */
+    border-radius: 8px; /* Tăng bo tròn góc */
+    transition: border-color 0.3s; /* Hiệu ứng chuyển tiếp màu viền */
+}
+
+.search-bar input:focus {
+    border-color: #80bdff; /* Màu viền khi focus */
+    outline: none; /* Loại bỏ đường viền mặc định khi focus */
+}
+
+.search-bar button {
+    padding: 10px 20px; /* Tăng padding */
+    background-color: #6c63ff; /* Màu tím nhạt */
+    color: #fff;
+    border: none;
+    border-radius: 8px; /* Tăng bo tròn góc */
+    font-size: 1em;
+    cursor: pointer;
+    transition: background-color 0.3s; /* Hiệu ứng chuyển tiếp màu nền */
+}
+
+.search-bar button:hover {
+    background-color: #5a52e6; /* Màu tím đậm hơn khi hover */
+}
+
+/* Hero Section */
+.hero {
+    background-color: #6c63ff; /* Màu tím nhạt */
+    color: #fff;
+    text-align: center;
+    padding: 80px 20px; /* Tăng padding và thêm padding ngang */
+}
+
+.hero h2 {
+    font-family: 'Dancing Script', cursive;
+    font-size: 3.5em; /* Tăng kích thước tiêu đề */
+    margin-bottom: 30px; /* Tăng margin */
+}
+
+.action-btn {
+    padding: 12px 25px; /* Tăng padding */
+    background-color: #fff; /* Màu trắng cho nút */
+    color: #6c63ff; /* Màu tím nhạt cho chữ nút */
+    border: none;
+    border-radius: 8px; /* Tăng bo tròn góc */
+    font-family: 'Roboto', sans-serif;
+    font-size: 1.1em; /* Tăng kích thước chữ */
+    font-weight: 500;
+    cursor: pointer;
+    text-decoration: none;
+    display: inline-block;
+    transition: background-color 0.3s; /* Hiệu ứng chuyển tiếp màu nền */
+}
+
+.action-btn:hover {
+    background-color: #e0e0e0; /* Màu khi hover */
+}
+
+/* Featured Products Section */
+.featured-products {
+    padding: 60px 20px; /* Tăng padding và thêm padding ngang */
+    background-color: #f4f4f8; /* Màu nền nhẹ nhàng hơn */
+}
+
+.featured-products h2 {
+    font-family: 'Dancing Script', cursive;
+    font-size: 3em; /* Tăng kích thước tiêu đề */
+    color: #4a6572; /* Màu xanh xám đậm */
+    text-align: center;
+    margin-bottom: 40px; /* Tăng margin */
+}
+
+.product-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px; /* Tăng khoảng cách */
+    justify-content: center;
+}
+
+.product-item {
+    background-color: #fff;
+    padding: 25px; /* Tăng padding */
+    border-radius: 12px; /* Tăng bo tròn góc */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Thêm bóng đổ nhẹ */
+    text-align: center;
+    width: 250px; /* Tăng chiều rộng */
+    transition: transform 0.3s; /* Hiệu ứng chuyển tiếp transform */
+}
+
+.product-item:hover {
+    transform: translateY(-8px); /* Hiệu ứng hover */
+}
+
+.product-item img {
+    width: 100%;
+    height: 200px; /* Tăng chiều cao ảnh */
+    object-fit: cover;
+    border-radius: 8px; /* Tăng bo tròn góc ảnh */
+    margin-bottom: 15px; /* Tăng margin */
+}
+
+.product-item h4 {
+    font-family: 'Roboto', sans-serif;
+    font-size: 1.3em; /* Tăng kích thước tiêu đề */
+    color: #333;
+    margin-bottom: 15px; /* Tăng margin */
+}
+
+.product-item p {
+    font-family: 'Roboto', sans-serif;
+    font-size: 1.1em; /* Tăng kích thước văn bản */
+    color: #666;
+    margin-bottom: 15px; /* Tăng margin */
+}
+
+/* About Us Section */
+.about-us {
+    padding: 60px 20px; /* Tăng padding và thêm padding ngang */
+    text-align: center;
+    background-color: #ffffff; /* Màu nền trắng */
+}
+
+.about-us h2 {
+    font-family: 'Dancing Script', cursive;
+    font-size: 3em; /* Tăng kích thước tiêu đề */
+    color: #4a6572; /* Màu xanh xám đậm */
+    margin-bottom: 30px; /* Tăng margin */
+}
+
+.about-us p {
+    font-family: 'Roboto', sans-serif;
+    font-size: 1.15em; /* Tăng kích thước văn bản */
+    color: #5d6d7e; /* Màu xám xanh */
+    margin-bottom: 30px; /* Tăng margin */
+    line-height: 1.7; /* Tăng khoảng cách dòng */
+}
+
+/* Footer */
+footer {
+    background-color: #6c63ff; /* Màu tím nhạt */
+    color: #fff;
+    padding: 30px 0; /* Tăng padding */
+    text-align: center;
+}
+
+footer p {
+    font-family: 'Roboto', sans-serif;
+    font-size: 1em; /* Tăng kích thước văn bản */
+    margin: 8px 0; /* Tăng margin */
+}
+
+footer a {
+    color: #fff;
+    text-decoration: none;
+    transition: color 0.3s; /* Hiệu ứng chuyển tiếp màu */
+}
+
+footer a:hover {
+    color: #e0e0e0; /* Màu khi hover */
+}
+
+/* Đảm bảo liên kết trong user-cart hiển thị */
+.user-cart a {
+    margin-left: 15px;
+    color: #fff;
+    text-decoration: none;
+    font-family: 'Roboto', sans-serif;
+    font-size: 1em;
+    display: inline-block;
+}
+
+/* Đảm bảo các liên kết trong nav hiển thị */
+nav .container a {
+    display: inline-block;
+    margin: 0 15px;
+    color: #fff;
+    text-decoration: none;
+    font-family: 'Roboto', sans-serif;
+    font-size: 1em;
+}

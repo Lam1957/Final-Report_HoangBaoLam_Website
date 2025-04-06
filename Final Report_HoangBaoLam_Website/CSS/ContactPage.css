@@ -1,0 +1,73 @@
+/* CSS/ContactUs.css */
+
+
+.contact-us {
+  padding: 60px 20px; 
+  background-color: #f4f4f8;
+}
+
+.contact-us h2 {
+  color: #4a6572; 
+  font-size: 2.8em;
+  margin-bottom: 30px; 
+  font-family: 'Dancing Script', cursive; 
+}
+
+.contact-us form {
+  max-width: 700px;
+  margin: 0 auto;
+  text-align: left;
+  background-color: #ffffff; 
+  padding: 40px; 
+  border-radius: 12px; 
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.contact-us label {
+  display: block;
+  margin: 15px 0 8px; 
+  color: #34495e; 
+  font-size: 1.1em; 
+  font-family: 'Roboto', sans-serif;
+}
+
+.contact-us input,
+.contact-us textarea {
+  width: 100%;
+  padding: 12px; 
+  margin-bottom: 15px; 
+  border: 1px solid #ced4da; 
+  border-radius: 6px; 
+  font-family: 'Roboto', sans-serif; 
+  font-size: 1em; 
+  box-sizing: border-box; 
+  transition: border-color 0.3s; 
+}
+
+.contact-us input:focus,
+.contact-us textarea:focus {
+  border-color: #80bdff; 
+  outline: none;
+}
+
+.contact-us textarea {
+  height: 150px;
+  resize: vertical;
+}
+
+.contact-us button {
+  background-color: #6c63ff; 
+  color: white;
+  border: none;
+  padding: 12px 25px;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 1.1em;
+  font-weight: 500;
+  transition: background-color 0.3s;
+  font-family: 'Roboto', sans-serif;
+}
+
+.contact-us button:hover {
+  background-color: #5a52e6;
+}

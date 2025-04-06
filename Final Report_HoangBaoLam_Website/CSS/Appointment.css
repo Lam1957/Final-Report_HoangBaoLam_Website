@@ -1,0 +1,86 @@
+/* CSS/Appointment.css */
+
+.appointment {
+    padding: 60px 20px; /* Tăng padding và thêm padding ngang cho responsive */
+    background-color: #f4f4f8; /* Màu nền nhẹ nhàng hơn */
+}
+
+.appointment .container {
+    max-width: 700px; /* Tăng max-width để phù hợp với nhiều màn hình hơn */
+    margin: 0 auto;
+}
+
+.appointment h2 {
+    font-family: 'Dancing Script', cursive;
+    font-size: 2.8em; /* Tăng kích thước tiêu đề */
+    color: #4a6572; /* Màu xanh xám đậm cho tiêu đề */
+    text-align: center;
+    margin-bottom: 30px; /* Tăng khoảng cách dưới tiêu đề */
+}
+
+.appointment p {
+    font-family: 'Roboto', sans-serif;
+    font-size: 1.15em; /* Tăng kích thước văn bản */
+    color: #5d6d7e; /* Màu xám xanh cho văn bản */
+    text-align: center;
+    margin-bottom: 40px; /* Tăng khoảng cách dưới đoạn văn */
+}
+
+#appointment-form {
+    display: flex;
+    flex-direction: column;
+    gap: 25px; /* Tăng khoảng cách giữa các phần tử */
+    background-color: #ffffff; /* Màu nền trắng */
+    padding: 40px; /* Tăng padding */
+    border-radius: 12px; /* Tăng border-radius */
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1); /* Tăng độ bóng đổ */
+}
+
+#appointment-form label {
+    font-family: 'Roboto', sans-serif;
+    font-size: 1.1em; /* Tăng kích thước label */
+    color: #333;
+    margin-bottom: 5px; /* Thêm margin dưới label */
+}
+
+#appointment-form input,
+#appointment-form select,
+#appointment-form textarea {
+    padding: 12px; /* Tăng padding cho input */
+    font-size: 1em;
+    border: 1px solid #ced4da; /* Màu viền nhẹ nhàng hơn */
+    border-radius: 6px; /* Tăng border-radius */
+    font-family: 'Roboto', sans-serif;
+    width: 100%;
+    box-sizing: border-box;
+    transition: border-color 0.3s; /* Hiệu ứng chuyển tiếp màu viền */
+}
+
+#appointment-form input:focus,
+#appointment-form select:focus,
+#appointment-form textarea:focus {
+    border-color: #80bdff; /* Màu viền khi focus */
+    outline: none; /* Loại bỏ đường viền mặc định khi focus */
+}
+
+#appointment-form textarea {
+    resize: vertical;
+    min-height: 150px; /* Tăng chiều cao tối thiểu cho textarea */
+}
+
+#appointment-form button {
+    padding: 12px 25px; /* Tăng padding nút */
+    background-color: #6c63ff; /* Màu tím nhạt hơn, hiện đại hơn */
+    color: #ffffff; /* Màu trắng cho chữ nút */
+    border: none;
+    border-radius: 6px; /* Tăng border-radius nút */
+    font-family: 'Roboto', sans-serif;
+    font-size: 1.1em; /* Tăng kích thước chữ nút */
+    font-weight: 500;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+#appointment-form button:hover {
+    background-color: #5a52e6; /* Màu tím đậm hơn khi hover */
+}

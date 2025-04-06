@@ -1,0 +1,132 @@
+/* CSS/Products.css */
+
+/* Products Page */
+.products {
+  padding: 60px 20px;
+  background-color: #f4f4f8;
+}
+
+.products h2 {
+  color: #4a6572;
+  margin-bottom: 30px;
+  text-align: center;
+  font-family: 'Dancing Script', cursive; 
+  font-size: 2.8em;
+}
+
+.filter-bar {
+  display: flex;
+  gap: 30px;
+  margin-bottom: 30px; 
+  justify-content: center; /* Căn giữa thanh lọc */
+  flex-wrap: wrap; /* Cho phép bộ lọc xuống dòng trên màn hình nhỏ */
+}
+
+.filter-group {
+  display: flex;
+  align-items: center;
+  gap: 15px; /* Tăng khoảng cách giữa label và select */
+}
+
+.filter-group label {
+  color: #34495e; /* Màu xanh đậm cho label */
+  font-weight: 500;
+  font-size: 1.1em; /* Tăng kích thước label */
+  font-family: 'Roboto', sans-serif;
+}
+
+.filter-group select {
+  padding: 10px 15px;
+  border-radius: 8px;
+  border: 1px solid #ced4da; 
+  font-size: 1em;
+  font-family: 'Roboto', sans-serif;
+  transition: border-color 0.3s; /* Hiệu ứng chuyển tiếp màu viền */
+}
+
+.filter-group select:focus {
+  border-color: #80bdff; /* Màu viền khi focus */
+  outline: none; /* Loại bỏ đường viền mặc định khi focus */
+}
+
+/* Product Grid (được kế thừa từ style.css, nhưng có thể tùy chỉnh thêm nếu cần) */
+.product-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 30px; 
+}
+
+.product {
+  background-color: white;
+  padding: 20px;
+  border: 1px solid #e0e0e0;
+  border-radius: 12px;
+  text-align: center;
+  transition: transform 0.3s;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
+}
+
+.product:hover {
+  transform: translateY(-8px);
+}
+
+.product img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 8px;
+  margin-bottom: 15px;
+}
+
+.product h3 {
+  font-size: 1.3em; 
+  margin: 15px 0 10px;
+  font-family: 'Roboto', sans-serif;
+}
+
+.product p {
+  color: #6c63ff;
+  font-weight: bold;
+  font-size: 1.1em; 
+  margin-bottom: 15px; 
+  font-family: 'Roboto', sans-serif;
+}
+
+.product button {
+  background-color: #6c63ff; 
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 8px; 
+  cursor: pointer;
+  font-size: 1em; 
+  font-family: 'Roboto', sans-serif;
+  transition: background-color 0.3s;
+}
+
+.product button:hover {
+  background-color: #5a52e6; 
+}
+
+/* Responsive */
+@media (max-width: 1024px) {
+  .product-grid {
+      grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+@media (max-width: 768px) {
+  .product-grid {
+      grid-template-columns: repeat(2, 1fr);
+  }
+  .filter-bar {
+      flex-direction: column;
+      gap: 15px; /* Tăng khoảng cách giữa các bộ lọc trên màn hình nhỏ */
+  }
+}
+
+@media (max-width: 480px) {
+  .product-grid {
+      grid-template-columns: 1fr;
+  }
+}

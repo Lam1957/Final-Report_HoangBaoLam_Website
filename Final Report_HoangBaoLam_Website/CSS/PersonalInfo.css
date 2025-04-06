@@ -1,0 +1,137 @@
+/* CSS/PersonalInfo.css */
+
+.personal-info {
+    padding: 60px 20px;
+    background-color: #f4f4f8;
+}
+
+.personal-info .container {
+    max-width: 1100px;
+    margin: 0 auto;
+}
+
+.personal-info h2 {
+    font-family: 'Dancing Script', cursive;
+    font-size: 2.8em;
+    color: #4a6572; 
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.info-display,
+.info-edit,
+.change-password,
+.logout-section {
+    background-color: #ffffff;
+    padding: 30px;
+    border-radius: 18px;
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.1); 
+    margin-bottom: 50px; 
+    max-width: 700px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.info-display h3,
+.info-edit h3,
+.change-password h3 {
+    font-family: 'Roboto', sans-serif;
+    font-size: 2em; 
+    color: #34495e; 
+    margin-bottom: 25px; 
+}
+
+.info-display p {
+    font-family: 'Roboto', sans-serif;
+    font-size: 1.15em;
+    color: #5d6d7e; 
+    margin-bottom: 15px; 
+    line-height: 1.7; 
+}
+
+.info-display p strong {
+    color: #2c3e50; 
+}
+
+.info-edit form,
+.change-password form {
+    display: flex;
+    flex-direction: column;
+    gap: 20px; 
+}
+
+.form-row {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.form-row label {
+    font-family: 'Roboto', sans-serif;
+    font-size: 1.1em; 
+    color: #333;
+    text-align: left;
+    margin-bottom: 8px; 
+}
+
+.form-row input {
+    padding: 12px;
+    font-size: 1em;
+    border: 1px solid #ced4da; /* Màu viền nhẹ nhàng hơn */
+    border-radius: 8px;
+    font-family: 'Roboto', sans-serif;
+    transition: border-color 0.3s; /* Hiệu ứng chuyển tiếp màu viền */
+}
+
+.form-row input:focus {
+    border-color: #80bdff; /* Màu viền khi focus */
+    outline: none; /* Loại bỏ đường viền mặc định khi focus */
+}
+
+/* Button Group */
+.button-group {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    gap: 15px;
+    margin-top: 20px; 
+}
+
+/* Action Buttons (Save, Cancel, Change Password, Logout) */
+.action-btn {
+    padding: 12px 25px;
+    background-color: #6c63ff; 
+    color: #ffffff; 
+    border: none;
+    border-radius: 8px; 
+    font-family: 'Roboto', sans-serif;
+    font-size: 1.1em; 
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.action-btn:hover {
+    background-color: #5a52e6; 
+}
+
+/* Cancel Button */
+.cancel-btn {
+    padding: 12px 25px;
+    background-color: #e0e0e0; 
+    color: #333;
+    border: none;
+    border-radius: 8px; 
+    font-family: 'Roboto', sans-serif;
+    font-size: 1.1em; 
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.cancel-btn:hover {
+    background-color: #c0c0c0; 
+}
+
+/* Logout Section */
+.logout-section {
+    text-align: right; 
+}

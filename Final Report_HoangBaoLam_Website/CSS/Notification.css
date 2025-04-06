@@ -1,0 +1,62 @@
+/* CSS/Notification.css */
+
+/* Overlay để làm mờ nền khi thông báo xuất hiện */
+.notification-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.6); 
+    display: none; 
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+}
+
+/* Container của thông báo */
+.notification {
+    background-color: #ffffff; 
+    padding: 30px 40px;
+    border-radius: 18px; 
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.25); 
+    text-align: center;
+    max-width: 450px; 
+    width: 90%;
+    transform: scale(0.8); 
+    opacity: 0; 
+    transition: transform 0.3s ease, opacity 0.3s ease;
+}
+
+/* Nội dung thông báo */
+.notification p {
+    font-family: 'Roboto', sans-serif;
+    font-size: 1.3em; 
+    color: #333; 
+    margin: 0 0 25px 0; 
+    line-height: 1.6;
+}
+
+/* Nút OK trong thông báo */
+.notification button {
+    padding: 12px 25px; 
+    background-color: #6c63ff;
+    color: #ffffff; 
+    border: none;
+    border-radius: 8px; 
+    font-family: 'Roboto', sans-serif;
+    font-size: 1.1em; 
+    font-weight: 500;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.notification button:hover {
+    background-color: #5a52e6; 
+}
+
+/* Hiển thị thông báo khi overlay có class 'active' */
+.notification-overlay.active .notification {
+    transform: scale(1); 
+    opacity: 1;
+}

@@ -1,0 +1,115 @@
+/* CSS/AboutPage.css */
+
+.about-us {
+  padding:  60px20px;
+  background-color: #f8f9fa; /* Màu nền xám nhạt */
+  text-align: center;
+}
+
+.about-us .container {
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+.about-us h2 {
+  font-family: 'Dancing Script', cursive;
+  font-size: 2.8em;
+  color: #4a6572; /* Màu xanh xám đậm cho tiêu đề */
+  margin-bottom: 40px;
+}
+
+
+.about-section {
+  margin-bottom: 50px;
+}
+
+.about-section h3 {
+  font-family: 'Roboto', sans-serif;
+  font-size: 2em;
+  color: #34495e; /* Màu xanh đậm cho tiêu đề phần giới thiệu */
+  margin-bottom: 25px;
+}
+
+.about-section p {
+  font-family: 'Roboto', sans-serif;
+  font-size: 1.15em;
+  color: #5d6d7e; /* Màu xám xanh cho văn bản */
+  line-height: 1.7;
+  margin-bottom: 20px;
+  text-align: left;
+}
+
+
+.team-gallery {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 40px;
+  margin-top: 30px;
+}
+
+.team-member {
+  text-align: center;
+  width: 200px;
+}
+
+.team-member img {
+  width: 180px;
+  height: 180px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-bottom: 15px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.team-member h4 {
+  font-family: 'Roboto', sans-serif;
+  font-size: 1.3em;
+  color: #2c3e50; /* Màu xanh đen cho tên thành viên */
+}
+
+
+.values-list {
+  list-style: none;
+  padding: 0;
+  text-align: left;
+  max-width: 700px;
+  margin: 30px auto;
+}
+
+.values-list li {
+  font-family: 'Roboto', sans-serif;
+  font-size: 1.15em;
+  color: #5d6d7e; /* Màu xám xanh cho văn bản danh sách */
+  margin-bottom: 20px;
+  line-height: 1.7;
+}
+
+.values-list li strong {
+  color: #2c3e50; /* Màu xanh đen cho văn bản in đậm */
+}
+
+
+.cta {
+  background-color: #ffffff; /* Màu nền trắng */
+  padding: 40px;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  margin-top: 50px;
+}
+
+.cta .btn {
+  display: inline-block;
+  padding: 12px 25px;
+  background-color: #e74c3c; /* Màu đỏ cam cho nút */
+  color: #ffffff; /* Màu trắng cho chữ nút */
+  text-decoration: none;
+  border-radius: 6px;
+  font-family: 'Roboto', sans-serif;
+  font-size: 1.2em;
+  transition: background-color 0.3s;
+}
+
+.cta .btn:hover {
+  background-color: #c0392b; /* Màu đỏ sẫm hơn khi hover */
+}

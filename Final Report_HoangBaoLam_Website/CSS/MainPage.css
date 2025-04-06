@@ -1,0 +1,151 @@
+/* MainPage.css */
+
+/* Banner */
+.banner {
+  position: relative;
+  text-align: center;
+  background-color: #6c63ff; 
+  padding: 80px 20px;
+  color: white;
+}
+
+.banner-text h2 {
+  font-size: 3em; 
+  margin-bottom: 30px; 
+  font-family: 'Dancing Script', cursive; 
+}
+
+.banner-text p {
+  font-size: 1.2em;
+  margin-bottom: 30px;
+}
+
+.btn {
+  background-color: #ffffff; 
+  color: #6c63ff; 
+  padding: 12px 25px; 
+  text-decoration: none;
+  border-radius: 8px;
+  display: inline-block;
+  font-size: 1.1em;
+  transition: background-color 0.3s;
+}
+
+.btn:hover {
+  background-color: #e0e0e0; 
+}
+
+/* Sản Phẩm Nổi Bật */
+.featured-products {
+  padding: 60px 20px; 
+  text-align: center;
+  background-color: #f4f4f8; 
+}
+
+.featured-products h2 {
+  color: #4a6572; 
+  margin-bottom: 30px;
+  font-family: 'Dancing Script', cursive;
+  font-size: 2.5em;
+}
+
+.product-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 30px;
+}
+
+.product {
+  background-color: white;
+  padding: 20px; 
+  border: 1px solid #e0e0e0;
+  border-radius: 12px;
+  text-align: center;
+  transition: transform 0.3s;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.product:hover {
+  transform: translateY(-8px);
+}
+
+.product img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 8px; 
+  margin-bottom: 15px; 
+}
+
+.product h3 {
+  font-size: 1.3em; 
+  margin: 15px 0 10px;
+}
+
+.product p {
+  color: #6c63ff;
+  font-weight: bold;
+  font-size: 1.1em;
+  margin-bottom: 15px;
+}
+
+.product button {
+  background-color: #6c63ff;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 8px; 
+  cursor: pointer;
+  font-size: 1em; 
+  transition: background-color 0.3s;
+}
+
+.product button:hover {
+  background-color: #5a52e6; 
+}
+
+
+.about-us {
+  padding: 60px 20px;
+  text-align: center;
+  background-color: #ffffff; 
+}
+
+.about-us h2 {
+  color: #4a6572;
+  margin-bottom: 30px; 
+  font-family: 'Dancing Script', cursive; 
+  font-size: 2.5em;
+}
+
+.about-us p {
+  color: #5d6d7e;
+  margin-bottom: 30px;
+  font-size: 1.15em;
+  line-height: 1.7;
+}
+
+/* Responsive */
+@media (max-width: 1024px) {
+  .product-grid {
+      grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+@media (max-width: 768px) {
+  .product-grid {
+      grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 480px) {
+  .product-grid {
+      grid-template-columns: 1fr;
+  }
+  .banner-text h2 {
+      font-size: 2em;
+  }
+  .banner-text p {
+      font-size: 1em;
+  }
+}

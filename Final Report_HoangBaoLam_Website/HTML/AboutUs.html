@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>About Us - Kson</title>
+    <link rel="stylesheet" href="../CSS/style.css" />
+    <link rel="stylesheet" href="../CSS/AboutPage.css" />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Dancing+Script:wght@700&display=swap"
+        rel="stylesheet"
+    />
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="logo">
+                <h1>Kson</h1>
+            </div>
+            <div class="user-cart">
+                <a href="../HTML/Cart.html">Cart (<span id="cart-count">0</span>)</a>
+                <a href="#" id="user-status">Login | Register</a>
+            </div>
+        </div>
+        <div class="nav-search-container">
+            <nav>
+                <div class="container">
+                    <a href="../HTML/MainPage.html">Home</a>
+                    <a href="../HTML/Products.html">Products</a>
+                    <a href="../HTML/AboutUs.html">About Us</a>
+                    <a href="../HTML/ContactUs.html">Contact Us</a>
+                </div>
+            </nav>
+            <div class="search-bar">
+                <form id="search-form">
+                    <input type="text" placeholder="Search products..." />
+                    <button type="submit">Search</button>
+                </form>
+            </div>
+        </div>
+    </header>
+
+    <section class="about-us">
+        <div class="container">
+            <h2>About Kson</h2>
+
+            <div class="about-section">
+                <h3>Our Story</h3>
+                <p>
+                    Welcome to Kson, where elegance meets exquisite craftsmanship. 
+                    Established in 2017, we we have 8 years of experience in crafting 
+                    powerful jewelry that exudes beauty and durability over time. Our 
+                    journey began with a passion for designing unique pieces that tell 
+                    a story, celebrate love, and capture life's most precious moments.
+                </p>
+                <p>
+                    At Kson, we believe that every piece of jewelry should reflect the 
+                    uniqueness of the wearer. Therefore, we work closely with talented 
+                    people to create collections that combine modern trends with classic 
+                    designs, ensuring that each piece is a unique work of art.
+                </p>
+            </div>
+
+            <div class="about-section">
+                <h3>Our Team</h3>
+                <p>
+                    Our team is a family of passionate designers, craftsmen and jewellers, 
+                    dedicated to bringing you the best. Led by our creators, Karen and Yvonne, 
+                    we combine creativity and expertise to create the perfect piece of 
+                    jewellery for our customers. From sourcing the finest quality materials 
+                    to the finishing touches, our floral team is committed to delivering 
+                    exquisite craftsmanship in every piece.
+                </p>
+                <div class="team-gallery">
+                    <div class="team-member">
+                        <img
+                            src="../Product_Picture/Team/kyo.jpg"
+                            alt="Kyo"
+                            onerror="this.src='https://placehold.co/150x150?text=Kyo'"
+                        />
+                        <h4>Kyo - Co-Founder & Designer</h4>
+                    </div>
+                    <div class="team-member">
+                        <img
+                            src="../Product_Picture/Team/yone.jpg"
+                            alt="Yone"
+                            onerror="this.src='https://placehold.co/150x150?text=Yone'"
+                        />
+                        <h4>Yone - Co-Founder & Creative Director</h4>
+                    </div>
+                </div>
+            </div>
+
+            <div class="about-section">
+                <h3>Our Values</h3>
+                <ul class="values-list">
+                    <li>
+                        <strong>Quality:</strong> We use only the finest materials to
+                        ensure every piece is of the highest standard.
+                    </li>
+                    <li>
+                        <strong>Creativity:</strong> Our designs are inspired by the
+                        beauty of nature, love, and modern elegance.
+                    </li>
+                    <li>
+                        <strong>Customer Satisfaction:</strong> Your happiness is our
+                        priority, and we strive to provide exceptional service.
+                    </li>
+                    <li>
+                        <strong>Sustainability:</strong> We are committed to ethical
+                        sourcing and sustainable practices in all our operations.
+                    </li>
+                </ul>
+            </div>
+
+            <div class="about-section cta">
+                <h3>Discover Our Collections</h3>
+                <p>
+                    Explore our stunning range of rings, necklaces, earrings, and
+                    bracelets, each crafted to make you shine.
+                </p>
+                <a href="../HTML/Products.html" class="btn">Shop Now</a>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <p>
+                Email:
+                <a href="mailto:contact@kson.com">contact@kson.com</a> |
+                Hotline: <a href="tel:0123456789">0123 456 789</a>
+            </p>
+            <p><a href="#">Facebook</a> | <a href="#">Instagram</a></p>
+            <p>Kson - Address: Ha Long Street, Ho Chi Minh City</p>
+        </div>
+    </footer>
+
+    <script src="../Js/Bracelets.js"></script>
+    <script src="../Js/Earrings.js"></script>
+    <script src="../Js/Necklaces.js"></script>
+    <script src="../Js/Rings.js"></script>
+    <script src="../Js/script.js"></script>
+</body>
+</html>
